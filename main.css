@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /*position: relative;*/
+}
+
+.main_background {
+    background: url("./img/main-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /*position: absolute;*/
+    right: 0;
+}
+
+.nav_container {
+    position: absolute;
+    height: 75px;
+    width: 100%;
+}
+
+.main_nav {
+    height: 75px;
+    width: 100%;
+    display: none;
+}
+
+.main_text {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.your {
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.personal {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.down_arrow {
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-25%);
+}
+
+.ham_container {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+    position: absolute;
+    left: 20px;
+    top: 12.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ham {
+    height: 30px;
+    width: 32px;
+}
+
+.facebook {
+    height: 20px;
+    width: 20px;
+}
+
+.twitter {
+    height: 20px;
+    width: 20px;
+}
+
+.social {
+    position: absolute;
+    width: 124px;
+    height: 75px;
+    display: flex;
+    right: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 700px) {
+    .main_nav {
+        height: 75px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        align-content: center;
+        align-items: center;
+        color: white;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    .ham_container {
+        display: none;
+    }
+
+    .ham {
+        display: none;
+    }
+
+    .facebook {
+        display: none;
+    }
+
+    .twitter {
+        display: none;
+    }
+
+    .social {
+        display: none;
+    }
+}
